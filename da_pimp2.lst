@@ -1,0 +1,1467 @@
+GAS LISTING /tmp/ccSGmAQ1.s 			page 1
+
+
+   1               		.file	"da_pimp2.c"
+   2               	__SP_H__ = 0x3e
+   3               	__SP_L__ = 0x3d
+   4               	__SREG__ = 0x3f
+   5               	__tmp_reg__ = 0
+   6               	__zero_reg__ = 1
+   7               		.stabs	"/home/pi/dp2.src/",100,0,2,.Ltext0
+   8               		.stabs	"da_pimp2.c",100,0,2,.Ltext0
+   9               		.text
+  10               	.Ltext0:
+  11               		.stabs	"gcc2_compiled.",60,0,0,0
+  12               		.stabs	"int:t(0,1)=r(0,1);-32768;32767;",128,0,0,0
+  13               		.stabs	"char:t(0,2)=@s8;r(0,2);0;255;",128,0,0,0
+  14               		.stabs	"long int:t(0,3)=@s32;r(0,3);020000000000;017777777777;",128,0,0,0
+  15               		.stabs	"unsigned int:t(0,4)=r(0,4);0;0177777;",128,0,0,0
+  16               		.stabs	"long unsigned int:t(0,5)=@s32;r(0,5);0;037777777777;",128,0,0,0
+  17               		.stabs	"__int128:t(0,6)=@s128;r(0,6);02000000000000000000000000000000000000000000;0177777777777777
+  18               		.stabs	"__int128 unsigned:t(0,7)=@s128;r(0,7);0;03777777777777777777777777777777777777777777;",128
+  19               		.stabs	"long long int:t(0,8)=@s64;r(0,8);01000000000000000000000;00777777777777777777777;",128,0,0
+  20               		.stabs	"long long unsigned int:t(0,9)=@s64;r(0,9);0;01777777777777777777777;",128,0,0,0
+  21               		.stabs	"short int:t(0,10)=r(0,10);-32768;32767;",128,0,0,0
+  22               		.stabs	"short unsigned int:t(0,11)=r(0,11);0;0177777;",128,0,0,0
+  23               		.stabs	"signed char:t(0,12)=@s8;r(0,12);-128;127;",128,0,0,0
+  24               		.stabs	"unsigned char:t(0,13)=@s8;r(0,13);0;255;",128,0,0,0
+  25               		.stabs	"float:t(0,14)=r(0,1);4;0;",128,0,0,0
+  26               		.stabs	"double:t(0,15)=r(0,1);4;0;",128,0,0,0
+  27               		.stabs	"long double:t(0,16)=r(0,1);4;0;",128,0,0,0
+  28               		.stabs	"short _Fract:t(0,17)=r(0,1);1;0;",128,0,0,0
+  29               		.stabs	"_Fract:t(0,18)=r(0,1);2;0;",128,0,0,0
+  30               		.stabs	"long _Fract:t(0,19)=r(0,1);4;0;",128,0,0,0
+  31               		.stabs	"long long _Fract:t(0,20)=r(0,1);8;0;",128,0,0,0
+  32               		.stabs	"unsigned short _Fract:t(0,21)=r(0,1);1;0;",128,0,0,0
+  33               		.stabs	"unsigned _Fract:t(0,22)=r(0,1);2;0;",128,0,0,0
+  34               		.stabs	"unsigned long _Fract:t(0,23)=r(0,1);4;0;",128,0,0,0
+  35               		.stabs	"unsigned long long _Fract:t(0,24)=r(0,1);8;0;",128,0,0,0
+  36               		.stabs	"_Sat short _Fract:t(0,25)=r(0,1);1;0;",128,0,0,0
+  37               		.stabs	"_Sat _Fract:t(0,26)=r(0,1);2;0;",128,0,0,0
+  38               		.stabs	"_Sat long _Fract:t(0,27)=r(0,1);4;0;",128,0,0,0
+  39               		.stabs	"_Sat long long _Fract:t(0,28)=r(0,1);8;0;",128,0,0,0
+  40               		.stabs	"_Sat unsigned short _Fract:t(0,29)=r(0,1);1;0;",128,0,0,0
+  41               		.stabs	"_Sat unsigned _Fract:t(0,30)=r(0,1);2;0;",128,0,0,0
+  42               		.stabs	"_Sat unsigned long _Fract:t(0,31)=r(0,1);4;0;",128,0,0,0
+  43               		.stabs	"_Sat unsigned long long _Fract:t(0,32)=r(0,1);8;0;",128,0,0,0
+  44               		.stabs	"short _Accum:t(0,33)=r(0,1);2;0;",128,0,0,0
+  45               		.stabs	"_Accum:t(0,34)=r(0,1);4;0;",128,0,0,0
+  46               		.stabs	"long _Accum:t(0,35)=r(0,1);8;0;",128,0,0,0
+  47               		.stabs	"long long _Accum:t(0,36)=r(0,1);8;0;",128,0,0,0
+  48               		.stabs	"unsigned short _Accum:t(0,37)=r(0,1);2;0;",128,0,0,0
+  49               		.stabs	"unsigned _Accum:t(0,38)=r(0,1);4;0;",128,0,0,0
+  50               		.stabs	"unsigned long _Accum:t(0,39)=r(0,1);8;0;",128,0,0,0
+  51               		.stabs	"unsigned long long _Accum:t(0,40)=r(0,1);8;0;",128,0,0,0
+  52               		.stabs	"_Sat short _Accum:t(0,41)=r(0,1);2;0;",128,0,0,0
+  53               		.stabs	"_Sat _Accum:t(0,42)=r(0,1);4;0;",128,0,0,0
+  54               		.stabs	"_Sat long _Accum:t(0,43)=r(0,1);8;0;",128,0,0,0
+  55               		.stabs	"_Sat long long _Accum:t(0,44)=r(0,1);8;0;",128,0,0,0
+  56               		.stabs	"_Sat unsigned short _Accum:t(0,45)=r(0,1);2;0;",128,0,0,0
+  57               		.stabs	"_Sat unsigned _Accum:t(0,46)=r(0,1);4;0;",128,0,0,0
+GAS LISTING /tmp/ccSGmAQ1.s 			page 2
+
+
+  58               		.stabs	"_Sat unsigned long _Accum:t(0,47)=r(0,1);8;0;",128,0,0,0
+  59               		.stabs	"_Sat unsigned long long _Accum:t(0,48)=r(0,1);8;0;",128,0,0,0
+  60               		.stabs	"void:t(0,49)=(0,49)",128,0,0,0
+  61               		.stabs	"/usr/lib/avr/include/avr/io.h",130,0,0,0
+  62               		.stabs	"/usr/lib/avr/include/avr/sfr_defs.h",130,0,0,0
+  63               		.stabs	"/usr/lib/avr/include/inttypes.h",130,0,0,0
+  64               		.stabs	"/usr/lib/gcc/avr/5.4.0/include/stdint.h",130,0,0,0
+  65               		.stabs	"/usr/lib/avr/include/stdint.h",130,0,0,0
+  66               		.stabs	"int8_t:t(5,1)=(0,12)",128,0,125,0
+  67               		.stabs	"uint8_t:t(5,2)=(0,13)",128,0,126,0
+  68               		.stabs	"int16_t:t(5,3)=(0,1)",128,0,127,0
+  69               		.stabs	"uint16_t:t(5,4)=(0,4)",128,0,128,0
+  70               		.stabs	"int32_t:t(5,5)=(0,3)",128,0,129,0
+  71               		.stabs	"uint32_t:t(5,6)=(0,5)",128,0,130,0
+  72               		.stabs	"int64_t:t(5,7)=(0,8)",128,0,132,0
+  73               		.stabs	"uint64_t:t(5,8)=(0,9)",128,0,133,0
+  74               		.stabs	"intptr_t:t(5,9)=(5,3)",128,0,146,0
+  75               		.stabs	"uintptr_t:t(5,10)=(5,4)",128,0,151,0
+  76               		.stabs	"int_least8_t:t(5,11)=(5,1)",128,0,163,0
+  77               		.stabs	"uint_least8_t:t(5,12)=(5,2)",128,0,168,0
+  78               		.stabs	"int_least16_t:t(5,13)=(5,3)",128,0,173,0
+  79               		.stabs	"uint_least16_t:t(5,14)=(5,4)",128,0,178,0
+  80               		.stabs	"int_least32_t:t(5,15)=(5,5)",128,0,183,0
+  81               		.stabs	"uint_least32_t:t(5,16)=(5,6)",128,0,188,0
+  82               		.stabs	"int_least64_t:t(5,17)=(5,7)",128,0,196,0
+  83               		.stabs	"uint_least64_t:t(5,18)=(5,8)",128,0,203,0
+  84               		.stabs	"int_fast8_t:t(5,19)=(5,1)",128,0,217,0
+  85               		.stabs	"uint_fast8_t:t(5,20)=(5,2)",128,0,222,0
+  86               		.stabs	"int_fast16_t:t(5,21)=(5,3)",128,0,227,0
+  87               		.stabs	"uint_fast16_t:t(5,22)=(5,4)",128,0,232,0
+  88               		.stabs	"int_fast32_t:t(5,23)=(5,5)",128,0,237,0
+  89               		.stabs	"uint_fast32_t:t(5,24)=(5,6)",128,0,242,0
+  90               		.stabs	"int_fast64_t:t(5,25)=(5,7)",128,0,250,0
+  91               		.stabs	"uint_fast64_t:t(5,26)=(5,8)",128,0,257,0
+  92               		.stabs	"intmax_t:t(5,27)=(5,7)",128,0,277,0
+  93               		.stabs	"uintmax_t:t(5,28)=(5,8)",128,0,282,0
+  94               		.stabn	162,0,0,0
+  95               		.stabn	162,0,0,0
+  96               		.stabs	"int_farptr_t:t(3,1)=(5,5)",128,0,77,0
+  97               		.stabs	"uint_farptr_t:t(3,2)=(5,6)",128,0,81,0
+  98               		.stabn	162,0,0,0
+  99               		.stabn	162,0,0,0
+ 100               		.stabs	"/usr/lib/avr/include/avr/fuse.h",130,0,0,0
+ 101               		.stabs	"__fuse_t:t(6,1)=(6,2)=s3low:(0,13),0,8;high:(0,13),8,8;extended:(0,13),16,8;;",128,0,244,0
+ 102               		.stabn	162,0,0,0
+ 103               		.stabn	162,0,0,0
+ 104               		.stabs	"/usr/lib/avr/include/stdio.h",130,0,0,0
+ 105               		.stabs	"/usr/lib/gcc/avr/5.4.0/include/stdarg.h",130,0,0,0
+ 106               		.stabs	"__gnuc_va_list:t(8,1)=(8,2)=*(0,49)",128,0,40,0
+ 107               		.stabs	"va_list:t(8,3)=(8,1)",128,0,98,0
+ 108               		.stabn	162,0,0,0
+ 109               		.stabs	"/usr/lib/gcc/avr/5.4.0/include/stddef.h",130,0,0,0
+ 110               		.stabs	"size_t:t(9,1)=(0,4)",128,0,216,0
+ 111               		.stabn	162,0,0,0
+ 112               		.stabs	"__file:T(7,1)=s14buf:(7,2)=*(0,2),0,16;unget:(0,13),16,8;flags:(5,2),24,8;size:(0,1),32,16
+ 113               		.stabs	"FILE:t(7,8)=(7,1)",128,0,277,0
+ 114               		.stabs	"fpos_t:t(7,9)=(0,8)",128,0,950,0
+GAS LISTING /tmp/ccSGmAQ1.s 			page 3
+
+
+ 115               		.stabn	162,0,0,0
+ 116               		.stabs	"delay_ms:F(0,49)",36,0,5,delay_ms
+ 117               		.stabs	"ms:P(0,13)",64,0,5,24
+ 118               	.global	delay_ms
+ 119               		.type	delay_ms, @function
+ 120               	delay_ms:
+ 121               		.stabd	46,0,0
+ 122               		.stabs	"util.c",132,0,0,.Ltext1
+ 123               	.Ltext1:
+   1:util.c        **** #include <avr/io.h>      // this contains all the IO port definitions
+   2:util.c        **** 
+   3:util.c        **** // taken from adafruit's digg source
+   4:util.c        **** 
+   5:util.c        **** void delay_ms(unsigned char ms)
+   6:util.c        **** {
+ 124               		.stabn	68,0,6,.LM0-.LFBB1
+ 125               	.LM0:
+ 126               	.LFBB1:
+ 127               	/* prologue: function */
+ 128               	/* frame size = 0 */
+ 129               	/* stack size = 0 */
+ 130               	.L__stack_usage = 0
+   7:util.c        ****   unsigned short delay_count = F_CPU / 4000;
+   8:util.c        ****   
+   9:util.c        ****   unsigned short cnt;
+  10:util.c        ****   asm volatile ("\n"
+ 131               		.stabn	68,0,10,.LM1-.LFBB1
+ 132               	.LM1:
+ 133 0000 2AEF      		ldi r18,lo8(-6)
+ 134 0002 30E0      		ldi r19,0
+ 135               	/* #APP */
+ 136               	 ;  10 "util.c" 1
+ 137               		
+ 138               	L_dl17:
+ 139 0004 E22F      		mov r30, r18
+ 140 0006 F32F      		mov r31, r19
+ 141               	L_dl27:
+ 142 0008 3197      		sbiw r30, 1
+ 143 000a 01F4      		brne L_dl27
+ 144 000c A895      		wdr
+ 145 000e 8A95      		dec r24
+ 146 0010 01F4      		brne L_dl17
+ 147               		
+ 148               	 ;  0 "" 2
+ 149               	/* #NOAPP */
+ 150 0012 0895      		ret
+ 151               		.size	delay_ms, .-delay_ms
+ 152               	.Lscope1:
+ 153               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 154               		.stabd	78,0,0
+ 155               		.stabs	"digits:F(5,4)",36,0,25,digits
+ 156               		.stabs	"n:P(5,4)",64,0,25,24
+ 157               	.global	digits
+ 158               		.type	digits, @function
+ 159               	digits:
+ 160               		.stabd	46,0,0
+  11:util.c        **** 		"L_dl1%=:\n\t"
+GAS LISTING /tmp/ccSGmAQ1.s 			page 4
+
+
+  12:util.c        **** 		"mov %A0, %A2\n\t"
+  13:util.c        **** 		"mov %B0, %B2\n"
+  14:util.c        **** 		"L_dl2%=:\n\t"
+  15:util.c        **** 		"sbiw %A0, 1\n\t"
+  16:util.c        **** 		"brne L_dl2%=\n\t"
+  17:util.c        **** 		"wdr\n\t"
+  18:util.c        **** 		"dec %1\n\t" "brne L_dl1%=\n\t":"=&w" (cnt)
+  19:util.c        **** 		:"r"(ms), "r"((unsigned short) (delay_count))
+  20:util.c        **** 		);
+  21:util.c        **** }
+  22:util.c        **** 
+  23:util.c        **** 
+  24:util.c        **** 
+  25:util.c        **** uint16_t digits(uint16_t n) {
+ 161               		.stabn	68,0,25,.LM2-.LFBB2
+ 162               	.LM2:
+ 163               	.LFBB2:
+ 164               	/* prologue: function */
+ 165               	/* frame size = 0 */
+ 166               	/* stack size = 0 */
+ 167               	.L__stack_usage = 0
+  26:util.c        **** 	if (n >= 100)
+ 168               		.stabn	68,0,26,.LM3-.LFBB2
+ 169               	.LM3:
+ 170 0014 8436      		cpi r24,100
+ 171 0016 9105      		cpc r25,__zero_reg__
+ 172 0018 00F4      		brsh .L4
+  27:util.c        **** 	  return 3;
+  28:util.c        **** 	if (n >= 10);
+  29:util.c        **** 	return 2;
+ 173               		.stabn	68,0,29,.LM4-.LFBB2
+ 174               	.LM4:
+ 175 001a 82E0      		ldi r24,lo8(2)
+ 176 001c 90E0      		ldi r25,0
+ 177 001e 0895      		ret
+ 178               	.L4:
+  27:util.c        **** 	  return 3;
+ 179               		.stabn	68,0,27,.LM5-.LFBB2
+ 180               	.LM5:
+ 181 0020 83E0      		ldi r24,lo8(3)
+ 182 0022 90E0      		ldi r25,0
+  30:util.c        **** 	return 1;
+  31:util.c        **** }
+ 183               		.stabn	68,0,31,.LM6-.LFBB2
+ 184               	.LM6:
+ 185 0024 0895      		ret
+ 186               		.size	digits, .-digits
+ 187               	.Lscope2:
+ 188               		.stabs	"",36,0,0,.Lscope2-.LFBB2
+ 189               		.stabd	78,0,0
+ 190               		.stabs	"hundreds:F(5,4)",36,0,34,hundreds
+ 191               		.stabs	"n:P(5,4)",64,0,34,18
+ 192               	.global	hundreds
+ 193               		.type	hundreds, @function
+ 194               	hundreds:
+ 195               		.stabd	46,0,0
+  32:util.c        **** 
+GAS LISTING /tmp/ccSGmAQ1.s 			page 5
+
+
+  33:util.c        **** 
+  34:util.c        **** uint16_t hundreds(uint16_t n) {
+ 196               		.stabn	68,0,34,.LM7-.LFBB3
+ 197               	.LM7:
+ 198               	.LFBB3:
+ 199               	/* prologue: function */
+ 200               	/* frame size = 0 */
+ 201               	/* stack size = 0 */
+ 202               	.L__stack_usage = 0
+ 203 0026 9C01      		movw r18,r24
+  35:util.c        **** 	uint16_t i=0;
+ 204               		.stabn	68,0,35,.LM8-.LFBB3
+ 205               	.LM8:
+ 206 0028 80E0      		ldi r24,0
+ 207 002a 90E0      		ldi r25,0
+ 208               	.L7:
+  36:util.c        **** 	
+  37:util.c        **** 	while (n >= 100) {
+ 209               		.stabn	68,0,37,.LM9-.LFBB3
+ 210               	.LM9:
+ 211 002c 2436      		cpi r18,100
+ 212 002e 3105      		cpc r19,__zero_reg__
+ 213 0030 00F0      		brlo .L9
+  38:util.c        **** 		n-=100;
+ 214               		.stabn	68,0,38,.LM10-.LFBB3
+ 215               	.LM10:
+ 216 0032 2456      		subi r18,100
+ 217 0034 3109      		sbc r19,__zero_reg__
+  39:util.c        **** 		i++;
+ 218               		.stabn	68,0,39,.LM11-.LFBB3
+ 219               	.LM11:
+ 220 0036 0196      		adiw r24,1
+ 221 0038 00C0      		rjmp .L7
+ 222               	.L9:
+ 223               	/* epilogue start */
+  40:util.c        **** 	}
+  41:util.c        **** 	return i;
+  42:util.c        **** }
+ 224               		.stabn	68,0,42,.LM12-.LFBB3
+ 225               	.LM12:
+ 226 003a 0895      		ret
+ 227               		.size	hundreds, .-hundreds
+ 228               		.stabs	"i:r(5,4)",64,0,35,24
+ 229               		.stabn	192,0,0,.LFBB3-.LFBB3
+ 230               		.stabn	224,0,0,.Lscope3-.LFBB3
+ 231               	.Lscope3:
+ 232               		.stabs	"",36,0,0,.Lscope3-.LFBB3
+ 233               		.stabd	78,0,0
+ 234               		.stabs	"tens:F(5,4)",36,0,44,tens
+ 235               		.stabs	"n:P(5,4)",64,0,44,24
+ 236               	.global	tens
+ 237               		.type	tens, @function
+ 238               	tens:
+ 239               		.stabd	46,0,0
+  43:util.c        **** 
+  44:util.c        **** uint16_t tens(uint16_t n) {
+ 240               		.stabn	68,0,44,.LM13-.LFBB4
+GAS LISTING /tmp/ccSGmAQ1.s 			page 6
+
+
+ 241               	.LM13:
+ 242               	.LFBB4:
+ 243               	/* prologue: function */
+ 244               	/* frame size = 0 */
+ 245               	/* stack size = 0 */
+ 246               	.L__stack_usage = 0
+ 247               	.L11:
+  45:util.c        **** 	uint16_t i=0;
+  46:util.c        **** 	
+  47:util.c        **** 	while (n >= 100) {
+ 248               		.stabn	68,0,47,.LM14-.LFBB4
+ 249               	.LM14:
+ 250 003c 8436      		cpi r24,100
+ 251 003e 9105      		cpc r25,__zero_reg__
+ 252 0040 00F0      		brlo .L15
+  48:util.c        **** 		n-=100;
+ 253               		.stabn	68,0,48,.LM15-.LFBB4
+ 254               	.LM15:
+ 255 0042 8456      		subi r24,100
+ 256 0044 9109      		sbc r25,__zero_reg__
+ 257 0046 00C0      		rjmp .L11
+ 258               	.L15:
+ 259 0048 20E0      		ldi r18,0
+ 260 004a 30E0      		ldi r19,0
+ 261               	.L13:
+  49:util.c        **** 	}
+  50:util.c        **** 	while (n >= 10) {
+ 262               		.stabn	68,0,50,.LM16-.LFBB4
+ 263               	.LM16:
+ 264 004c 8A30      		cpi r24,10
+ 265 004e 9105      		cpc r25,__zero_reg__
+ 266 0050 00F0      		brlo .L16
+  51:util.c        **** 		n-=10;
+ 267               		.stabn	68,0,51,.LM17-.LFBB4
+ 268               	.LM17:
+ 269 0052 0A97      		sbiw r24,10
+  52:util.c        **** 		i++;
+ 270               		.stabn	68,0,52,.LM18-.LFBB4
+ 271               	.LM18:
+ 272 0054 2F5F      		subi r18,-1
+ 273 0056 3F4F      		sbci r19,-1
+ 274 0058 00C0      		rjmp .L13
+ 275               	.L16:
+  53:util.c        **** 	}
+  54:util.c        **** 	return i;
+  55:util.c        **** }
+ 276               		.stabn	68,0,55,.LM19-.LFBB4
+ 277               	.LM19:
+ 278 005a C901      		movw r24,r18
+ 279 005c 0895      		ret
+ 280               		.size	tens, .-tens
+ 281               		.stabs	"i:r(5,4)",64,0,45,18
+ 282               		.stabn	192,0,0,.LFBB4-.LFBB4
+ 283               		.stabn	224,0,0,.Lscope4-.LFBB4
+ 284               	.Lscope4:
+ 285               		.stabs	"",36,0,0,.Lscope4-.LFBB4
+ 286               		.stabd	78,0,0
+GAS LISTING /tmp/ccSGmAQ1.s 			page 7
+
+
+ 287               		.stabs	"adc_init:F(0,49)",36,0,5,adc_init
+ 288               	.global	adc_init
+ 289               		.type	adc_init, @function
+ 290               	adc_init:
+ 291               		.stabd	46,0,0
+ 292               		.stabs	"adc.h",132,0,0,.Ltext2
+ 293               	.Ltext2:
+   1:adc.h         **** 
+   2:adc.h         **** #define CLR(x,y) (x&=(~(1<<y)))
+   3:adc.h         **** #define SET(x,y) (x|=(1<<y))
+   4:adc.h         **** 
+   5:adc.h         **** void adc_init (void)
+   6:adc.h         **** {
+ 294               		.stabn	68,0,6,.LM20-.LFBB5
+ 295               	.LM20:
+ 296               	.LFBB5:
+ 297               	/* prologue: function */
+ 298               	/* frame size = 0 */
+ 299               	/* stack size = 0 */
+ 300               	.L__stack_usage = 0
+   7:adc.h         ****         // Setup ADC
+   8:adc.h         ****         SET(ADCSRA,ADPS0);      // ADC pre-scalar0 set division by 8
+ 301               		.stabn	68,0,8,.LM21-.LFBB5
+ 302               	.LM21:
+ 303 005e EAE7      		ldi r30,lo8(122)
+ 304 0060 F0E0      		ldi r31,0
+ 305 0062 8081      		ld r24,Z
+ 306 0064 8160      		ori r24,lo8(1)
+ 307 0066 8083      		st Z,r24
+   9:adc.h         ****         SET(ADCSRA,ADPS1);      // ADC pre-scalar1 set division by 8
+ 308               		.stabn	68,0,9,.LM22-.LFBB5
+ 309               	.LM22:
+ 310 0068 8081      		ld r24,Z
+ 311 006a 8260      		ori r24,lo8(2)
+ 312 006c 8083      		st Z,r24
+  10:adc.h         ****         CLR(ADCSRA,ADPS2);      // ADC pre-scalar2 cleared division by 8
+ 313               		.stabn	68,0,10,.LM23-.LFBB5
+ 314               	.LM23:
+ 315 006e 8081      		ld r24,Z
+ 316 0070 8B7F      		andi r24,lo8(-5)
+ 317 0072 8083      		st Z,r24
+  11:adc.h         ****         SET(ADMUX, REFS0);      // REFS0 (bit 6) on for AREV <--> AVCC
+ 318               		.stabn	68,0,11,.LM24-.LFBB5
+ 319               	.LM24:
+ 320 0074 ACE7      		ldi r26,lo8(124)
+ 321 0076 B0E0      		ldi r27,0
+ 322 0078 8C91      		ld r24,X
+ 323 007a 8064      		ori r24,lo8(64)
+ 324 007c 8C93      		st X,r24
+  12:adc.h         ****         SET(ADCSRA,ADIE);       // ADC interrupt enable
+ 325               		.stabn	68,0,12,.LM25-.LFBB5
+ 326               	.LM25:
+ 327 007e 8081      		ld r24,Z
+ 328 0080 8860      		ori r24,lo8(8)
+ 329 0082 8083      		st Z,r24
+  13:adc.h         ****         SET(ADCSRA,ADEN);       // ADC enable
+ 330               		.stabn	68,0,13,.LM26-.LFBB5
+GAS LISTING /tmp/ccSGmAQ1.s 			page 8
+
+
+ 331               	.LM26:
+ 332 0084 8081      		ld r24,Z
+ 333 0086 8068      		ori r24,lo8(-128)
+ 334 0088 8083      		st Z,r24
+  14:adc.h         ****         SET(ADCSRA, ADSC);              // start adc conversion
+ 335               		.stabn	68,0,14,.LM27-.LFBB5
+ 336               	.LM27:
+ 337 008a 8081      		ld r24,Z
+ 338 008c 8064      		ori r24,lo8(64)
+ 339 008e 8083      		st Z,r24
+ 340 0090 0895      		ret
+ 341               		.size	adc_init, .-adc_init
+ 342               	.Lscope5:
+ 343               		.stabs	"",36,0,0,.Lscope5-.LFBB5
+ 344               		.stabd	78,0,0
+ 345               		.stabs	"adc_manual_read:F(5,4)",36,0,18,adc_manual_read
+ 346               	.global	adc_manual_read
+ 347               		.type	adc_manual_read, @function
+ 348               	adc_manual_read:
+ 349               		.stabd	46,0,0
+  15:adc.h         **** }
+  16:adc.h         **** 
+  17:adc.h         **** 
+  18:adc.h         **** uint16_t adc_manual_read (void)
+  19:adc.h         **** {
+ 350               		.stabn	68,0,19,.LM28-.LFBB6
+ 351               	.LM28:
+ 352               	.LFBB6:
+ 353               	/* prologue: function */
+ 354               	/* frame size = 0 */
+ 355               	/* stack size = 0 */
+ 356               	.L__stack_usage = 0
+  20:adc.h         ****         SET(ADCSRA, ADSC);              // start adc conversion
+ 357               		.stabn	68,0,20,.LM29-.LFBB6
+ 358               	.LM29:
+ 359 0092 8091 7A00 		lds r24,122
+ 360 0096 8064      		ori r24,lo8(64)
+ 361 0098 8093 7A00 		sts 122,r24
+ 362               	.L19:
+  21:adc.h         ****         while(ADCSRA & (1<<ADSC));      // wait for conversion to complete:w
+ 363               		.stabn	68,0,21,.LM30-.LFBB6
+ 364               	.LM30:
+ 365 009c 8091 7A00 		lds r24,122
+ 366 00a0 86FD      		sbrc r24,6
+ 367 00a2 00C0      		rjmp .L19
+  22:adc.h         ****         return (ADCW);
+ 368               		.stabn	68,0,22,.LM31-.LFBB6
+ 369               	.LM31:
+ 370 00a4 8091 7800 		lds r24,120
+ 371 00a8 9091 7900 		lds r25,120+1
+  23:adc.h         **** }
+ 372               		.stabn	68,0,23,.LM32-.LFBB6
+ 373               	.LM32:
+ 374 00ac 0895      		ret
+ 375               		.size	adc_manual_read, .-adc_manual_read
+ 376               	.Lscope6:
+ 377               		.stabs	"",36,0,0,.Lscope6-.LFBB6
+GAS LISTING /tmp/ccSGmAQ1.s 			page 9
+
+
+ 378               		.stabd	78,0,0
+ 379               		.stabs	"port_init:F(0,49)",36,0,74,port_init
+ 380               	.global	port_init
+ 381               		.type	port_init, @function
+ 382               	port_init:
+ 383               		.stabd	46,0,0
+ 384               		.stabs	"da_pimp2.c",132,0,0,.Ltext3
+ 385               	.Ltext3:
+   1:da_pimp2.c    **** #include <avr/io.h>
+   2:da_pimp2.c    **** #include <avr/interrupt.h>
+   3:da_pimp2.c    **** #include <stdio.h>
+   4:da_pimp2.c    **** #include "util.c"	
+   5:da_pimp2.c    **** #include "adc.h"		
+   6:da_pimp2.c    **** 
+   7:da_pimp2.c    **** #define MUX_OFFSET 0x40         // MUX value for REFS0 to be enabled for AREV <---> VCC tie
+   8:da_pimp2.c    **** #define ADC_SAVE 64             // average ADC values for sensors 
+   9:da_pimp2.c    **** #define CLR(x,y) (x&=(~(1<<y)))
+  10:da_pimp2.c    **** #define SET(x,y) (x|=(1<<y))
+  11:da_pimp2.c    **** #define CC_D1 PB0
+  12:da_pimp2.c    **** #define CC_D2 PB1
+  13:da_pimp2.c    **** #define CC_D3 PB2
+  14:da_pimp2.c    **** #define ADC0 PC0
+  15:da_pimp2.c    **** #define ADC_DEBUG 0		// show ADC values on 7 segement display
+  16:da_pimp2.c    **** 
+  17:da_pimp2.c    **** 
+  18:da_pimp2.c    **** // globals 
+  19:da_pimp2.c    **** uint16_t	volt_out = 0;		// range 0 - 5120, used to convert adc to voltage - adc multiplier
+  20:da_pimp2.c    **** uint16_t	volt = 0;		// battery voltage, could be mains power {120V,220VAC} if battery is not connec
+  21:da_pimp2.c    **** uint8_t		adc_count = 0;		// counts sensor averaging
+  22:da_pimp2.c    **** uint16_t	avg_adc[ADC_SAVE];	// store adc values for each sensor for average calc
+  23:da_pimp2.c    **** uint8_t		volt_dig1,		// voltage reading broken broken out for 7-segment
+  24:da_pimp2.c    **** 		volt_dig2, 
+  25:da_pimp2.c    **** 		volt_dig3 = 0;
+  26:da_pimp2.c    **** uint8_t 	hexcode;
+  27:da_pimp2.c    **** uint16_t 	adc_volt;
+  28:da_pimp2.c    **** uint16_t 	adc_read;
+  29:da_pimp2.c    **** uint16_t 	adc_avg_total;
+  30:da_pimp2.c    **** uint8_t 	disp_pos=1;
+  31:da_pimp2.c    **** 
+  32:da_pimp2.c    **** 
+  33:da_pimp2.c    **** int main (void);
+  34:da_pimp2.c    **** ISR(ADC_vect);
+  35:da_pimp2.c    **** void port_init (void);
+  36:da_pimp2.c    **** void adc2avg (void);
+  37:da_pimp2.c    **** void adc2volt (void);
+  38:da_pimp2.c    **** void digit_breakup (void);
+  39:da_pimp2.c    **** void display_digits (void);
+  40:da_pimp2.c    **** void write_sev_seg (uint8_t alphanum, uint8_t digit);
+  41:da_pimp2.c    **** uint8_t digit_2_hex (uint8_t display_digit);
+  42:da_pimp2.c    **** 
+  43:da_pimp2.c    **** 
+  44:da_pimp2.c    **** int main (void)
+  45:da_pimp2.c    **** {
+  46:da_pimp2.c    **** 
+  47:da_pimp2.c    **** 	port_init();
+  48:da_pimp2.c    **** 	adc_init();
+  49:da_pimp2.c    **** 	sei();
+GAS LISTING /tmp/ccSGmAQ1.s 			page 10
+
+
+  50:da_pimp2.c    **** 
+  51:da_pimp2.c    **** 	while (1) 
+  52:da_pimp2.c    **** 	{
+  53:da_pimp2.c    **** 		SET(ADCSRA, ADSC);      // start adc conversion
+  54:da_pimp2.c    **** 
+  55:da_pimp2.c    **** 		if ( adc_count == ADC_SAVE ) 	// accumulate ADC readings 
+  56:da_pimp2.c    **** 		{
+  57:da_pimp2.c    **** 
+  58:da_pimp2.c    **** 			adc_count = 0;
+  59:da_pimp2.c    **** 			adc2avg();		// average analog voltage sensor values
+  60:da_pimp2.c    **** 			adc2volt();		// convert analog readings into voltage fahrenheit
+  61:da_pimp2.c    **** 			digit_breakup();	// break voltage into hundreds, tens and ones places
+  62:da_pimp2.c    **** 
+  63:da_pimp2.c    **** 		}
+  64:da_pimp2.c    **** 
+  65:da_pimp2.c    **** 		display_digits(); 			// update 7-segement display w/voltage
+  66:da_pimp2.c    **** //		delay_ms(1);
+  67:da_pimp2.c    **** 
+  68:da_pimp2.c    **** 	}
+  69:da_pimp2.c    **** 
+  70:da_pimp2.c    **** 	return(0);
+  71:da_pimp2.c    **** }
+  72:da_pimp2.c    **** 
+  73:da_pimp2.c    **** 
+  74:da_pimp2.c    **** void port_init (void) {
+ 386               		.stabn	68,0,74,.LM33-.LFBB7
+ 387               	.LM33:
+ 388               	.LFBB7:
+ 389               	/* prologue: function */
+ 390               	/* frame size = 0 */
+ 391               	/* stack size = 0 */
+ 392               	.L__stack_usage = 0
+  75:da_pimp2.c    **** 
+  76:da_pimp2.c    **** 	DDRD=0xFF;		// display port all outputs
+ 393               		.stabn	68,0,76,.LM34-.LFBB7
+ 394               	.LM34:
+ 395 00ae 8FEF      		ldi r24,lo8(-1)
+ 396 00b0 8AB9      		out 0xa,r24
+  77:da_pimp2.c    **** 	PORTD=0x00;		// disable all pull-ups
+ 397               		.stabn	68,0,77,.LM35-.LFBB7
+ 398               	.LM35:
+ 399 00b2 1BB8      		out 0xb,__zero_reg__
+  78:da_pimp2.c    **** 
+  79:da_pimp2.c    **** 	SET(DDRB, CC_D1);	// output for display, start high, pull low to use
+ 400               		.stabn	68,0,79,.LM36-.LFBB7
+ 401               	.LM36:
+ 402 00b4 209A      		sbi 0x4,0
+  80:da_pimp2.c    **** 	SET(DDRB, CC_D2);	// output for display, start high, pull low to use
+ 403               		.stabn	68,0,80,.LM37-.LFBB7
+ 404               	.LM37:
+ 405 00b6 219A      		sbi 0x4,1
+  81:da_pimp2.c    **** 	SET(DDRB, CC_D3);	// output for display, start high, pull low to use
+ 406               		.stabn	68,0,81,.LM38-.LFBB7
+ 407               	.LM38:
+ 408 00b8 229A      		sbi 0x4,2
+  82:da_pimp2.c    **** 	SET(PORTB, CC_D1);	// output for display, start high, pull low to use
+ 409               		.stabn	68,0,82,.LM39-.LFBB7
+GAS LISTING /tmp/ccSGmAQ1.s 			page 11
+
+
+ 410               	.LM39:
+ 411 00ba 289A      		sbi 0x5,0
+  83:da_pimp2.c    **** 	SET(PORTB, CC_D2);	// output for display, start high, pull low to use
+ 412               		.stabn	68,0,83,.LM40-.LFBB7
+ 413               	.LM40:
+ 414 00bc 299A      		sbi 0x5,1
+  84:da_pimp2.c    **** 	SET(PORTB, CC_D3);	// output for display, start high, pull low to use
+ 415               		.stabn	68,0,84,.LM41-.LFBB7
+ 416               	.LM41:
+ 417 00be 2A9A      		sbi 0x5,2
+ 418 00c0 0895      		ret
+ 419               		.size	port_init, .-port_init
+ 420               	.Lscope7:
+ 421               		.stabs	"",36,0,0,.Lscope7-.LFBB7
+ 422               		.stabd	78,0,0
+ 423               		.stabs	"__vector_21:F(0,49)",36,0,90,__vector_21
+ 424               	.global	__vector_21
+ 425               		.type	__vector_21, @function
+ 426               	__vector_21:
+ 427               		.stabd	46,0,0
+  85:da_pimp2.c    **** 
+  86:da_pimp2.c    **** }
+  87:da_pimp2.c    **** 
+  88:da_pimp2.c    **** 
+  89:da_pimp2.c    **** // collect analog values for averaging
+  90:da_pimp2.c    **** ISR(ADC_vect)
+  91:da_pimp2.c    **** {
+ 428               		.stabn	68,0,91,.LM42-.LFBB8
+ 429               	.LM42:
+ 430               	.LFBB8:
+ 431 00c2 1F92      		push r1
+ 432 00c4 0F92      		push r0
+ 433 00c6 0FB6      		in r0,__SREG__
+ 434 00c8 0F92      		push r0
+ 435 00ca 1124      		clr __zero_reg__
+ 436 00cc 2F93      		push r18
+ 437 00ce 3F93      		push r19
+ 438 00d0 8F93      		push r24
+ 439 00d2 EF93      		push r30
+ 440 00d4 FF93      		push r31
+ 441               	/* prologue: Signal */
+ 442               	/* frame size = 0 */
+ 443               	/* stack size = 8 */
+ 444               	.L__stack_usage = 8
+  92:da_pimp2.c    **** 
+  93:da_pimp2.c    **** 	// ADC sensors:
+  94:da_pimp2.c    **** 	// adc0 - temp
+  95:da_pimp2.c    **** 	avg_adc[adc_count] = ADCW;
+ 445               		.stabn	68,0,95,.LM43-.LFBB8
+ 446               	.LM43:
+ 447 00d6 8091 0000 		lds r24,adc_count
+ 448 00da 2091 7800 		lds r18,120
+ 449 00de 3091 7900 		lds r19,120+1
+ 450 00e2 E82F      		mov r30,r24
+ 451 00e4 F0E0      		ldi r31,0
+ 452 00e6 EE0F      		lsl r30
+ 453 00e8 FF1F      		rol r31
+GAS LISTING /tmp/ccSGmAQ1.s 			page 12
+
+
+ 454 00ea E050      		subi r30,lo8(-(avg_adc))
+ 455 00ec F040      		sbci r31,hi8(-(avg_adc))
+ 456 00ee 3183      		std Z+1,r19
+ 457 00f0 2083      		st Z,r18
+  96:da_pimp2.c    **** 	adc_count++;
+ 458               		.stabn	68,0,96,.LM44-.LFBB8
+ 459               	.LM44:
+ 460 00f2 8F5F      		subi r24,lo8(-(1))
+ 461 00f4 8093 0000 		sts adc_count,r24
+ 462               	/* epilogue start */
+  97:da_pimp2.c    **** }
+ 463               		.stabn	68,0,97,.LM45-.LFBB8
+ 464               	.LM45:
+ 465 00f8 FF91      		pop r31
+ 466 00fa EF91      		pop r30
+ 467 00fc 8F91      		pop r24
+ 468 00fe 3F91      		pop r19
+ 469 0100 2F91      		pop r18
+ 470 0102 0F90      		pop r0
+ 471 0104 0FBE      		out __SREG__,r0
+ 472 0106 0F90      		pop r0
+ 473 0108 1F90      		pop r1
+ 474 010a 1895      		reti
+ 475               		.size	__vector_21, .-__vector_21
+ 476               	.Lscope8:
+ 477               		.stabs	"",36,0,0,.Lscope8-.LFBB8
+ 478               		.stabd	78,0,0
+ 479               		.stabs	"adc2avg:F(0,49)",36,0,101,adc2avg
+ 480               	.global	adc2avg
+ 481               		.type	adc2avg, @function
+ 482               	adc2avg:
+ 483               		.stabd	46,0,0
+  98:da_pimp2.c    **** 
+  99:da_pimp2.c    **** 
+ 100:da_pimp2.c    **** // average sensor data
+ 101:da_pimp2.c    **** void adc2avg (void)
+ 102:da_pimp2.c    **** {
+ 484               		.stabn	68,0,102,.LM46-.LFBB9
+ 485               	.LM46:
+ 486               	.LFBB9:
+ 487               	/* prologue: function */
+ 488               	/* frame size = 0 */
+ 489               	/* stack size = 0 */
+ 490               	.L__stack_usage = 0
+ 103:da_pimp2.c    **** 	uint8_t i;
+ 104:da_pimp2.c    **** 
+ 105:da_pimp2.c    ****         // reset global vars to zero
+ 106:da_pimp2.c    ****         adc_count = 0;
+ 491               		.stabn	68,0,106,.LM47-.LFBB9
+ 492               	.LM47:
+ 493 010c 1092 0000 		sts adc_count,__zero_reg__
+ 107:da_pimp2.c    ****         adc_volt = 0;
+ 108:da_pimp2.c    **** 	adc_read = 0;
+ 109:da_pimp2.c    ****         adc_avg_total = 0;
+ 110:da_pimp2.c    **** 
+ 111:da_pimp2.c    ****         // slow down and average ADC readings to reduce noise
+ 112:da_pimp2.c    ****         // reduce ADC_SAVE to speed up response
+GAS LISTING /tmp/ccSGmAQ1.s 			page 13
+
+
+ 113:da_pimp2.c    ****         for(i=0;i<=ADC_SAVE;i++)
+ 114:da_pimp2.c    ****         {
+ 115:da_pimp2.c    ****                 adc_avg_total += avg_adc[adc_count];
+ 494               		.stabn	68,0,115,.LM48-.LFBB9
+ 495               	.LM48:
+ 496 0110 8091 0000 		lds r24,avg_adc
+ 497 0114 9091 0000 		lds r25,avg_adc+1
+ 498 0118 9C01      		movw r18,r24
+ 499 011a 46E0      		ldi r20,6
+ 500               		1:
+ 501 011c 220F      		lsl r18
+ 502 011e 331F      		rol r19
+ 503 0120 4A95      		dec r20
+ 504 0122 01F4      		brne 1b
+ 505 0124 820F      		add r24,r18
+ 506 0126 931F      		adc r25,r19
+ 507 0128 9093 0000 		sts adc_avg_total+1,r25
+ 508 012c 8093 0000 		sts adc_avg_total,r24
+ 116:da_pimp2.c    ****         }
+ 117:da_pimp2.c    **** 
+ 118:da_pimp2.c    ****         adc_read += adc_avg_total / ADC_SAVE;
+ 509               		.stabn	68,0,118,.LM49-.LFBB9
+ 510               	.LM49:
+ 511 0130 56E0      		ldi r21,6
+ 512               		1:
+ 513 0132 9695      		lsr r25
+ 514 0134 8795      		ror r24
+ 515 0136 5A95      		dec r21
+ 516 0138 01F4      		brne 1b
+ 517 013a 9093 0000 		sts adc_read+1,r25
+ 518 013e 8093 0000 		sts adc_read,r24
+ 119:da_pimp2.c    **** 	adc_volt = adc_read;
+ 519               		.stabn	68,0,119,.LM50-.LFBB9
+ 520               	.LM50:
+ 521 0142 9093 0000 		sts adc_volt+1,r25
+ 522 0146 8093 0000 		sts adc_volt,r24
+ 523 014a 0895      		ret
+ 524               		.size	adc2avg, .-adc2avg
+ 525               	.Lscope9:
+ 526               		.stabs	"",36,0,0,.Lscope9-.LFBB9
+ 527               		.stabd	78,0,0
+ 528               	.global	__floatunsisf
+ 529               	.global	__divsf3
+ 530               	.global	__mulsf3
+ 531               	.global	__fixunssfsi
+ 532               		.stabs	"adc2volt:F(0,49)",36,0,126,adc2volt
+ 533               	.global	adc2volt
+ 534               		.type	adc2volt, @function
+ 535               	adc2volt:
+ 536               		.stabd	46,0,0
+ 120:da_pimp2.c    **** 
+ 121:da_pimp2.c    **** }
+ 122:da_pimp2.c    **** 
+ 123:da_pimp2.c    **** 
+ 124:da_pimp2.c    **** // convert adc values into voltage 
+ 125:da_pimp2.c    **** // just diving adc by 4 gives approximate voltage
+ 126:da_pimp2.c    **** void adc2volt (void) 
+GAS LISTING /tmp/ccSGmAQ1.s 			page 14
+
+
+ 127:da_pimp2.c    **** {
+ 537               		.stabn	68,0,127,.LM51-.LFBB10
+ 538               	.LM51:
+ 539               	.LFBB10:
+ 540               	/* prologue: function */
+ 541               	/* frame size = 0 */
+ 542               	/* stack size = 0 */
+ 543               	.L__stack_usage = 0
+ 128:da_pimp2.c    **** 	// external spreadsheet used for calculating adc_divider
+ 129:da_pimp2.c    **** 	float adc_divider = 3.50;
+ 130:da_pimp2.c    **** 
+ 131:da_pimp2.c    ****         adc_volt = 10 * ( adc_volt / adc_divider );
+ 544               		.stabn	68,0,131,.LM52-.LFBB10
+ 545               	.LM52:
+ 546 014c 6091 0000 		lds r22,adc_volt
+ 547 0150 7091 0000 		lds r23,adc_volt+1
+ 548 0154 80E0      		ldi r24,0
+ 549 0156 90E0      		ldi r25,0
+ 550 0158 00D0      		rcall __floatunsisf
+ 551 015a 20E0      		ldi r18,0
+ 552 015c 30E0      		ldi r19,0
+ 553 015e 40E6      		ldi r20,lo8(96)
+ 554 0160 50E4      		ldi r21,lo8(64)
+ 555 0162 00D0      		rcall __divsf3
+ 556 0164 20E0      		ldi r18,0
+ 557 0166 30E0      		ldi r19,0
+ 558 0168 40E2      		ldi r20,lo8(32)
+ 559 016a 51E4      		ldi r21,lo8(65)
+ 560 016c 00D0      		rcall __mulsf3
+ 561 016e 00D0      		rcall __fixunssfsi
+ 132:da_pimp2.c    **** 
+ 133:da_pimp2.c    **** 	// 5% boost on readings below 15v
+ 134:da_pimp2.c    **** 	if ( adc_volt >=  150 )
+ 562               		.stabn	68,0,134,.LM53-.LFBB10
+ 563               	.LM53:
+ 564 0170 6639      		cpi r22,-106
+ 565 0172 7105      		cpc r23,__zero_reg__
+ 566 0174 00F0      		brlo .L27
+ 135:da_pimp2.c    **** 		adc_volt = adc_volt * .985;
+ 567               		.stabn	68,0,135,.LM54-.LFBB10
+ 568               	.LM54:
+ 569 0176 80E0      		ldi r24,0
+ 570 0178 90E0      		ldi r25,0
+ 571 017a 00D0      		rcall __floatunsisf
+ 572 017c 26EF      		ldi r18,lo8(-10)
+ 573 017e 38E2      		ldi r19,lo8(40)
+ 574 0180 4CE7      		ldi r20,lo8(124)
+ 575 0182 5FE3      		ldi r21,lo8(63)
+ 576 0184 00D0      		rcall __mulsf3
+ 577 0186 00D0      		rcall __fixunssfsi
+ 578               	.L27:
+ 579 0188 7093 0000 		sts adc_volt+1,r23
+ 580 018c 6093 0000 		sts adc_volt,r22
+ 581 0190 0895      		ret
+ 582               		.size	adc2volt, .-adc2volt
+ 583               	.Lscope10:
+ 584               		.stabs	"",36,0,0,.Lscope10-.LFBB10
+GAS LISTING /tmp/ccSGmAQ1.s 			page 15
+
+
+ 585               		.stabd	78,0,0
+ 586               		.stabs	"digit_breakup:F(0,49)",36,0,141,digit_breakup
+ 587               	.global	digit_breakup
+ 588               		.type	digit_breakup, @function
+ 589               	digit_breakup:
+ 590               		.stabd	46,0,0
+ 136:da_pimp2.c    **** 
+ 137:da_pimp2.c    **** }
+ 138:da_pimp2.c    **** 
+ 139:da_pimp2.c    **** 
+ 140:da_pimp2.c    **** // reformat voltage and pot values for 7 seg
+ 141:da_pimp2.c    **** void digit_breakup (void) 
+ 142:da_pimp2.c    **** {
+ 591               		.stabn	68,0,142,.LM55-.LFBB11
+ 592               	.LM55:
+ 593               	.LFBB11:
+ 594               	/* prologue: function */
+ 595               	/* frame size = 0 */
+ 596               	/* stack size = 0 */
+ 597               	.L__stack_usage = 0
+ 143:da_pimp2.c    **** 
+ 144:da_pimp2.c    **** 	if ( ADC_DEBUG )
+ 145:da_pimp2.c    **** 		adc_volt = adc_read;
+ 146:da_pimp2.c    **** 
+ 147:da_pimp2.c    **** 	volt_dig1 = adc_volt / 100;                                             // hundreds place
+ 598               		.stabn	68,0,147,.LM56-.LFBB11
+ 599               	.LM56:
+ 600 0192 2091 0000 		lds r18,adc_volt
+ 601 0196 3091 0000 		lds r19,adc_volt+1
+ 602 019a C901      		movw r24,r18
+ 603 019c 64E6      		ldi r22,lo8(100)
+ 604 019e 70E0      		ldi r23,0
+ 605 01a0 00D0      		rcall __udivmodhi4
+ 606 01a2 462F      		mov r20,r22
+ 607 01a4 6093 0000 		sts volt_dig1,r22
+ 148:da_pimp2.c    **** 	volt_dig2 = ( adc_volt - ( volt_dig1 * 100 ) ) / 10;                    // tens place
+ 608               		.stabn	68,0,148,.LM57-.LFBB11
+ 609               	.LM57:
+ 610 01a8 C901      		movw r24,r18
+ 611 01aa 54E6      		ldi r21,lo8(100)
+ 612 01ac 659F      		mul r22,r21
+ 613 01ae 8019      		sub r24,r0
+ 614 01b0 9109      		sbc r25,r1
+ 615 01b2 1124      		clr __zero_reg__
+ 616 01b4 6AE0      		ldi r22,lo8(10)
+ 617 01b6 70E0      		ldi r23,0
+ 618 01b8 00D0      		rcall __udivmodhi4
+ 619 01ba 6093 0000 		sts volt_dig2,r22
+ 149:da_pimp2.c    **** 	volt_dig3 = adc_volt - ( ( volt_dig1 * 100 ) + ( volt_dig2 * 10 ) );    // ones place
+ 620               		.stabn	68,0,149,.LM58-.LFBB11
+ 621               	.LM58:
+ 622 01be 84E6      		ldi r24,lo8(100)
+ 623 01c0 489F      		mul r20,r24
+ 624 01c2 2019      		sub r18,r0
+ 625 01c4 1124      		clr __zero_reg__
+ 626 01c6 5AE0      		ldi r21,lo8(10)
+ 627 01c8 659F      		mul r22,r21
+GAS LISTING /tmp/ccSGmAQ1.s 			page 16
+
+
+ 628 01ca 2019      		sub r18,r0
+ 629 01cc 1124      		clr __zero_reg__
+ 630 01ce 2093 0000 		sts volt_dig3,r18
+ 631 01d2 0895      		ret
+ 632               		.size	digit_breakup, .-digit_breakup
+ 633               	.Lscope11:
+ 634               		.stabs	"",36,0,0,.Lscope11-.LFBB11
+ 635               		.stabd	78,0,0
+ 636               		.stabs	"digit_2_hex:F(5,2)",36,0,153,digit_2_hex
+ 637               		.stabs	"display_digit:P(5,2)",64,0,153,24
+ 638               	.global	digit_2_hex
+ 639               		.type	digit_2_hex, @function
+ 640               	digit_2_hex:
+ 641               		.stabd	46,0,0
+ 150:da_pimp2.c    **** 
+ 151:da_pimp2.c    **** }
+ 152:da_pimp2.c    **** 
+ 153:da_pimp2.c    **** uint8_t digit_2_hex ( uint8_t display_digit )
+ 154:da_pimp2.c    **** {                                                                                                  
+ 642               		.stabn	68,0,154,.LM59-.LFBB12
+ 643               	.LM59:
+ 644               	.LFBB12:
+ 645               	/* prologue: function */
+ 646               	/* frame size = 0 */
+ 647               	/* stack size = 0 */
+ 648               	.L__stack_usage = 0
+ 155:da_pimp2.c    ****         uint8_t hex;                                                                               
+ 156:da_pimp2.c    **** 
+ 157:da_pimp2.c    ****         switch ( display_digit )
+ 649               		.stabn	68,0,157,.LM60-.LFBB12
+ 650               	.LM60:
+ 651 01d4 482F      		mov r20,r24
+ 652 01d6 50E0      		ldi r21,0
+ 653 01d8 4A30      		cpi r20,10
+ 654 01da 5105      		cpc r21,__zero_reg__
+ 655 01dc 00F4      		brsh .L30
+ 656 01de FA01      		movw r30,r20
+ 657 01e0 E050      		subi r30,lo8(-(gs(.L32)))
+ 658 01e2 F040      		sbci r31,hi8(-(gs(.L32)))
+ 659 01e4 0994      		ijmp
+ 660               		.section	.progmem.gcc_sw_table,"ax",@progbits
+ 661               		.p2align	1
+ 662               	.L32:
+ 663 0000 00C0      		rjmp .L31
+ 664 0002 00C0      		rjmp .L33
+ 665 0004 00C0      		rjmp .L34
+ 666 0006 00C0      		rjmp .L35
+ 667 0008 00C0      		rjmp .L36
+ 668 000a 00C0      		rjmp .L37
+ 669 000c 00C0      		rjmp .L38
+ 670 000e 00C0      		rjmp .L39
+ 671 0010 00C0      		rjmp .L40
+ 672 0012 00C0      		rjmp .L41
+ 673               		.text
+ 674               	.L31:
+ 158:da_pimp2.c    **** 	{
+ 159:da_pimp2.c    **** 			case (0): { hex = 0x77; break; }
+GAS LISTING /tmp/ccSGmAQ1.s 			page 17
+
+
+ 675               		.stabn	68,0,159,.LM61-.LFBB12
+ 676               	.LM61:
+ 677 01e6 97E7      		ldi r25,lo8(119)
+ 678 01e8 00C0      		rjmp .L30
+ 679               	.L33:
+ 160:da_pimp2.c    **** 			case (1): { hex = 0x12; break; }
+ 680               		.stabn	68,0,160,.LM62-.LFBB12
+ 681               	.LM62:
+ 682 01ea 92E1      		ldi r25,lo8(18)
+ 683 01ec 00C0      		rjmp .L30
+ 684               	.L34:
+ 161:da_pimp2.c    **** 			case (2): { hex = 0x3D; break; }
+ 685               		.stabn	68,0,161,.LM63-.LFBB12
+ 686               	.LM63:
+ 687 01ee 9DE3      		ldi r25,lo8(61)
+ 688 01f0 00C0      		rjmp .L30
+ 689               	.L35:
+ 162:da_pimp2.c    **** 			case (3): { hex = 0x3E; break; }
+ 690               		.stabn	68,0,162,.LM64-.LFBB12
+ 691               	.LM64:
+ 692 01f2 9EE3      		ldi r25,lo8(62)
+ 693 01f4 00C0      		rjmp .L30
+ 694               	.L36:
+ 163:da_pimp2.c    **** 			case (4): { hex = 0x5A; break; }
+ 695               		.stabn	68,0,163,.LM65-.LFBB12
+ 696               	.LM65:
+ 697 01f6 9AE5      		ldi r25,lo8(90)
+ 698 01f8 00C0      		rjmp .L30
+ 699               	.L37:
+ 164:da_pimp2.c    **** 			case (5): { hex = 0x6E; break; }
+ 700               		.stabn	68,0,164,.LM66-.LFBB12
+ 701               	.LM66:
+ 702 01fa 9EE6      		ldi r25,lo8(110)
+ 703 01fc 00C0      		rjmp .L30
+ 704               	.L38:
+ 165:da_pimp2.c    **** 			case (6): { hex = 0x6F; break; }
+ 705               		.stabn	68,0,165,.LM67-.LFBB12
+ 706               	.LM67:
+ 707 01fe 9FE6      		ldi r25,lo8(111)
+ 708 0200 00C0      		rjmp .L30
+ 709               	.L39:
+ 166:da_pimp2.c    **** 			case (7): { hex = 0x32; break; }
+ 710               		.stabn	68,0,166,.LM68-.LFBB12
+ 711               	.LM68:
+ 712 0202 92E3      		ldi r25,lo8(50)
+ 713 0204 00C0      		rjmp .L30
+ 714               	.L40:
+ 167:da_pimp2.c    **** 			case (8): { hex = 0x7F; break; }
+ 715               		.stabn	68,0,167,.LM69-.LFBB12
+ 716               	.LM69:
+ 717 0206 9FE7      		ldi r25,lo8(127)
+ 718 0208 00C0      		rjmp .L30
+ 719               	.L41:
+ 168:da_pimp2.c    **** 			case (9): { hex = 0x7A; break; }
+ 720               		.stabn	68,0,168,.LM70-.LFBB12
+ 721               	.LM70:
+ 722 020a 9AE7      		ldi r25,lo8(122)
+GAS LISTING /tmp/ccSGmAQ1.s 			page 18
+
+
+ 723               	.L30:
+ 169:da_pimp2.c    **** 	}
+ 170:da_pimp2.c    **** 
+ 171:da_pimp2.c    ****         return(hex);
+ 172:da_pimp2.c    **** 
+ 173:da_pimp2.c    **** }
+ 724               		.stabn	68,0,173,.LM71-.LFBB12
+ 725               	.LM71:
+ 726 020c 892F      		mov r24,r25
+ 727 020e 0895      		ret
+ 728               		.size	digit_2_hex, .-digit_2_hex
+ 729               		.stabs	"hex:r(5,2)",64,0,155,25
+ 730               		.stabn	192,0,0,.LFBB12-.LFBB12
+ 731               		.stabn	224,0,0,.Lscope12-.LFBB12
+ 732               	.Lscope12:
+ 733               		.stabs	"",36,0,0,.Lscope12-.LFBB12
+ 734               		.stabd	78,0,0
+ 735               		.stabs	"write_sev_seg:F(0,49)",36,0,201,write_sev_seg
+ 736               		.stabs	"hexcode:P(5,2)",64,0,201,24
+ 737               		.stabs	"digit:P(5,2)",64,0,201,22
+ 738               	.global	write_sev_seg
+ 739               		.type	write_sev_seg, @function
+ 740               	write_sev_seg:
+ 741               		.stabd	46,0,0
+ 174:da_pimp2.c    **** 
+ 175:da_pimp2.c    **** 
+ 176:da_pimp2.c    **** 
+ 177:da_pimp2.c    **** // send voltage to 7-segment
+ 178:da_pimp2.c    **** // one digit at a time
+ 179:da_pimp2.c    **** void display_digits (void)
+ 180:da_pimp2.c    **** {
+ 181:da_pimp2.c    ****         
+ 182:da_pimp2.c    ****         // run the 7-segememt display
+ 183:da_pimp2.c    ****         for ( disp_pos=1;disp_pos<=3;disp_pos++)
+ 184:da_pimp2.c    ****         {
+ 185:da_pimp2.c    ****                 if ( disp_pos == 1 )
+ 186:da_pimp2.c    ****                         hexcode = digit_2_hex(volt_dig1);	// hexcode for 7-segement first digit
+ 187:da_pimp2.c    ****                 else if ( disp_pos == 2 ) {
+ 188:da_pimp2.c    **** 			if (ADC_DEBUG)
+ 189:da_pimp2.c    **** 				hexcode = digit_2_hex(volt_dig2); // hexcode for 7-segement second digit with decimal (0x80)
+ 190:da_pimp2.c    **** 			else 
+ 191:da_pimp2.c    **** 				hexcode = digit_2_hex(volt_dig2) | 0x80; // hexcode for 7-segement second digit with decimal (0
+ 192:da_pimp2.c    ****                 } else if ( disp_pos == 3 )
+ 193:da_pimp2.c    ****                         hexcode = digit_2_hex(volt_dig3);	// hexcode for 7-segement third digit    
+ 194:da_pimp2.c    **** 
+ 195:da_pimp2.c    ****                 write_sev_seg(hexcode,disp_pos);		// pull the cathodes low to populate display
+ 196:da_pimp2.c    **** 	}
+ 197:da_pimp2.c    **** 	
+ 198:da_pimp2.c    **** }
+ 199:da_pimp2.c    **** 
+ 200:da_pimp2.c    **** 
+ 201:da_pimp2.c    **** void write_sev_seg (uint8_t hexcode, uint8_t digit) 
+ 202:da_pimp2.c    **** {
+ 742               		.stabn	68,0,202,.LM72-.LFBB13
+ 743               	.LM72:
+ 744               	.LFBB13:
+ 745               	/* prologue: function */
+GAS LISTING /tmp/ccSGmAQ1.s 			page 19
+
+
+ 746               	/* frame size = 0 */
+ 747               	/* stack size = 0 */
+ 748               	.L__stack_usage = 0
+ 203:da_pimp2.c    **** 
+ 204:da_pimp2.c    **** 	if ( digit == 1 ) {
+ 749               		.stabn	68,0,204,.LM73-.LFBB13
+ 750               	.LM73:
+ 751 0210 6130      		cpi r22,lo8(1)
+ 752 0212 01F4      		brne .L43
+ 205:da_pimp2.c    **** 
+ 206:da_pimp2.c    **** 		// shutdown display - reverse logic for common cathode
+ 207:da_pimp2.c    **** 		// enable digit-1
+ 208:da_pimp2.c    **** 		SET(PORTB, CC_D1);
+ 753               		.stabn	68,0,208,.LM74-.LFBB13
+ 754               	.LM74:
+ 755 0214 289A      		sbi 0x5,0
+ 209:da_pimp2.c    **** 		SET(PORTB, CC_D2);
+ 756               		.stabn	68,0,209,.LM75-.LFBB13
+ 757               	.LM75:
+ 758 0216 299A      		sbi 0x5,1
+ 210:da_pimp2.c    **** 		SET(PORTB, CC_D3);
+ 759               		.stabn	68,0,210,.LM76-.LFBB13
+ 760               	.LM76:
+ 761 0218 2A9A      		sbi 0x5,2
+ 211:da_pimp2.c    **** 		CLR(PORTB, CC_D1);
+ 762               		.stabn	68,0,211,.LM77-.LFBB13
+ 763               	.LM77:
+ 764 021a 2898      		cbi 0x5,0
+ 765 021c 00C0      		rjmp .L44
+ 766               	.L43:
+ 212:da_pimp2.c    **** 
+ 213:da_pimp2.c    **** 	} else if ( digit == 2 ) {
+ 767               		.stabn	68,0,213,.LM78-.LFBB13
+ 768               	.LM78:
+ 769 021e 6230      		cpi r22,lo8(2)
+ 770 0220 01F4      		brne .L45
+ 214:da_pimp2.c    **** 
+ 215:da_pimp2.c    **** 		SET(PORTB, CC_D1);
+ 771               		.stabn	68,0,215,.LM79-.LFBB13
+ 772               	.LM79:
+ 773 0222 289A      		sbi 0x5,0
+ 216:da_pimp2.c    **** 		SET(PORTB, CC_D2);
+ 774               		.stabn	68,0,216,.LM80-.LFBB13
+ 775               	.LM80:
+ 776 0224 299A      		sbi 0x5,1
+ 217:da_pimp2.c    **** 		SET(PORTB, CC_D3);
+ 777               		.stabn	68,0,217,.LM81-.LFBB13
+ 778               	.LM81:
+ 779 0226 2A9A      		sbi 0x5,2
+ 218:da_pimp2.c    **** 		CLR(PORTB, CC_D2);
+ 780               		.stabn	68,0,218,.LM82-.LFBB13
+ 781               	.LM82:
+ 782 0228 2998      		cbi 0x5,1
+ 783 022a 00C0      		rjmp .L44
+ 784               	.L45:
+ 219:da_pimp2.c    **** 
+ 220:da_pimp2.c    **** 	} else if ( digit == 3 ) {
+GAS LISTING /tmp/ccSGmAQ1.s 			page 20
+
+
+ 785               		.stabn	68,0,220,.LM83-.LFBB13
+ 786               	.LM83:
+ 787 022c 6330      		cpi r22,lo8(3)
+ 788 022e 01F4      		brne .L44
+ 221:da_pimp2.c    **** 
+ 222:da_pimp2.c    **** 		SET(PORTB, CC_D1);
+ 789               		.stabn	68,0,222,.LM84-.LFBB13
+ 790               	.LM84:
+ 791 0230 289A      		sbi 0x5,0
+ 223:da_pimp2.c    **** 		SET(PORTB, CC_D2);
+ 792               		.stabn	68,0,223,.LM85-.LFBB13
+ 793               	.LM85:
+ 794 0232 299A      		sbi 0x5,1
+ 224:da_pimp2.c    **** 		SET(PORTB, CC_D3);
+ 795               		.stabn	68,0,224,.LM86-.LFBB13
+ 796               	.LM86:
+ 797 0234 2A9A      		sbi 0x5,2
+ 225:da_pimp2.c    **** 		CLR(PORTB, CC_D3);
+ 798               		.stabn	68,0,225,.LM87-.LFBB13
+ 799               	.LM87:
+ 800 0236 2A98      		cbi 0x5,2
+ 801               	.L44:
+ 226:da_pimp2.c    **** 
+ 227:da_pimp2.c    **** 	}
+ 228:da_pimp2.c    **** 
+ 229:da_pimp2.c    **** 	PORTD = hexcode;
+ 802               		.stabn	68,0,229,.LM88-.LFBB13
+ 803               	.LM88:
+ 804 0238 8BB9      		out 0xb,r24
+ 230:da_pimp2.c    **** 
+ 231:da_pimp2.c    **** 	delay_ms(1);		// controls display speed
+ 805               		.stabn	68,0,231,.LM89-.LFBB13
+ 806               	.LM89:
+ 807 023a 81E0      		ldi r24,lo8(1)
+ 808 023c 00D0      		rcall delay_ms
+ 232:da_pimp2.c    **** 
+ 233:da_pimp2.c    **** 	SET(PORTB, CC_D1);      // output for display, start high, pull low to use
+ 809               		.stabn	68,0,233,.LM90-.LFBB13
+ 810               	.LM90:
+ 811 023e 289A      		sbi 0x5,0
+ 234:da_pimp2.c    **** 	SET(PORTB, CC_D2);      // output for display, start high, pull low to use
+ 812               		.stabn	68,0,234,.LM91-.LFBB13
+ 813               	.LM91:
+ 814 0240 299A      		sbi 0x5,1
+ 235:da_pimp2.c    **** 	SET(PORTB, CC_D3);      // output for display, start high, pull low to use
+ 815               		.stabn	68,0,235,.LM92-.LFBB13
+ 816               	.LM92:
+ 817 0242 2A9A      		sbi 0x5,2
+ 818 0244 0895      		ret
+ 819               		.size	write_sev_seg, .-write_sev_seg
+ 820               	.Lscope13:
+ 821               		.stabs	"",36,0,0,.Lscope13-.LFBB13
+ 822               		.stabd	78,0,0
+ 823               		.stabs	"display_digits:F(0,49)",36,0,179,display_digits
+ 824               	.global	display_digits
+ 825               		.type	display_digits, @function
+ 826               	display_digits:
+GAS LISTING /tmp/ccSGmAQ1.s 			page 21
+
+
+ 827               		.stabd	46,0,0
+ 180:da_pimp2.c    ****         
+ 828               		.stabn	68,0,180,.LM93-.LFBB14
+ 829               	.LM93:
+ 830               	.LFBB14:
+ 831 0246 CF93      		push r28
+ 832               	/* prologue: function */
+ 833               	/* frame size = 0 */
+ 834               	/* stack size = 1 */
+ 835               	.L__stack_usage = 1
+ 183:da_pimp2.c    ****         {
+ 836               		.stabn	68,0,183,.LM94-.LFBB14
+ 837               	.LM94:
+ 838 0248 81E0      		ldi r24,lo8(1)
+ 839               	.L54:
+ 183:da_pimp2.c    ****         {
+ 840               		.stabn	68,0,183,.LM95-.LFBB14
+ 841               	.LM95:
+ 842 024a 8093 0000 		sts disp_pos,r24
+ 843 024e C091 0000 		lds r28,disp_pos
+ 844 0252 C430      		cpi r28,lo8(4)
+ 845 0254 00F4      		brsh .L55
+ 185:da_pimp2.c    ****                         hexcode = digit_2_hex(volt_dig1);	// hexcode for 7-segement first digit
+ 846               		.stabn	68,0,185,.LM96-.LFBB14
+ 847               	.LM96:
+ 848 0256 C130      		cpi r28,lo8(1)
+ 849 0258 01F4      		brne .L48
+ 186:da_pimp2.c    ****                 else if ( disp_pos == 2 ) {
+ 850               		.stabn	68,0,186,.LM97-.LFBB14
+ 851               	.LM97:
+ 852 025a 8091 0000 		lds r24,volt_dig1
+ 853 025e 00C0      		rjmp .L52
+ 854               	.L48:
+ 187:da_pimp2.c    **** 			if (ADC_DEBUG)
+ 855               		.stabn	68,0,187,.LM98-.LFBB14
+ 856               	.LM98:
+ 857 0260 C230      		cpi r28,lo8(2)
+ 858 0262 01F4      		brne .L50
+ 191:da_pimp2.c    ****                 } else if ( disp_pos == 3 )
+ 859               		.stabn	68,0,191,.LM99-.LFBB14
+ 860               	.LM99:
+ 861 0264 8091 0000 		lds r24,volt_dig2
+ 862 0268 00D0      		rcall digit_2_hex
+ 863 026a 8068      		ori r24,lo8(-128)
+ 864 026c 00C0      		rjmp .L53
+ 865               	.L50:
+ 192:da_pimp2.c    ****                         hexcode = digit_2_hex(volt_dig3);	// hexcode for 7-segement third digit    
+ 866               		.stabn	68,0,192,.LM100-.LFBB14
+ 867               	.LM100:
+ 868 026e C330      		cpi r28,lo8(3)
+ 869 0270 01F4      		brne .L49
+ 193:da_pimp2.c    **** 
+ 870               		.stabn	68,0,193,.LM101-.LFBB14
+ 871               	.LM101:
+ 872 0272 8091 0000 		lds r24,volt_dig3
+ 873               	.L52:
+ 874 0276 00D0      		rcall digit_2_hex
+GAS LISTING /tmp/ccSGmAQ1.s 			page 22
+
+
+ 875               	.L53:
+ 876 0278 8093 0000 		sts hexcode,r24
+ 877               	.L49:
+ 195:da_pimp2.c    **** 	}
+ 878               		.stabn	68,0,195,.LM102-.LFBB14
+ 879               	.LM102:
+ 880 027c 6C2F      		mov r22,r28
+ 881 027e 8091 0000 		lds r24,hexcode
+ 882 0282 00D0      		rcall write_sev_seg
+ 183:da_pimp2.c    ****         {
+ 883               		.stabn	68,0,183,.LM103-.LFBB14
+ 884               	.LM103:
+ 885 0284 8091 0000 		lds r24,disp_pos
+ 886 0288 8F5F      		subi r24,lo8(-(1))
+ 887 028a 00C0      		rjmp .L54
+ 888               	.L55:
+ 889               	/* epilogue start */
+ 198:da_pimp2.c    **** 
+ 890               		.stabn	68,0,198,.LM104-.LFBB14
+ 891               	.LM104:
+ 892 028c CF91      		pop r28
+ 893 028e 0895      		ret
+ 894               		.size	display_digits, .-display_digits
+ 895               	.Lscope14:
+ 896               		.stabs	"",36,0,0,.Lscope14-.LFBB14
+ 897               		.stabd	78,0,0
+ 898               		.section	.text.startup,"ax",@progbits
+ 899               		.stabs	"main:F(0,1)",36,0,44,main
+ 900               	.global	main
+ 901               		.type	main, @function
+ 902               	main:
+ 903               		.stabd	46,0,0
+  45:da_pimp2.c    **** 
+ 904               		.stabn	68,0,45,.LM105-.LFBB15
+ 905               	.LM105:
+ 906               	.LFBB15:
+ 907               	/* prologue: function */
+ 908               	/* frame size = 0 */
+ 909               	/* stack size = 0 */
+ 910               	.L__stack_usage = 0
+  47:da_pimp2.c    **** 	adc_init();
+ 911               		.stabn	68,0,47,.LM106-.LFBB15
+ 912               	.LM106:
+ 913 0000 00D0      		rcall port_init
+  48:da_pimp2.c    **** 	sei();
+ 914               		.stabn	68,0,48,.LM107-.LFBB15
+ 915               	.LM107:
+ 916 0002 00D0      		rcall adc_init
+  49:da_pimp2.c    **** 
+ 917               		.stabn	68,0,49,.LM108-.LFBB15
+ 918               	.LM108:
+ 919               	/* #APP */
+ 920               	 ;  49 "da_pimp2.c" 1
+ 921 0004 7894      		sei
+ 922               	 ;  0 "" 2
+ 923               	/* #NOAPP */
+ 924               	.L58:
+GAS LISTING /tmp/ccSGmAQ1.s 			page 23
+
+
+  53:da_pimp2.c    **** 
+ 925               		.stabn	68,0,53,.LM109-.LFBB15
+ 926               	.LM109:
+ 927 0006 8091 7A00 		lds r24,122
+ 928 000a 8064      		ori r24,lo8(64)
+ 929 000c 8093 7A00 		sts 122,r24
+  55:da_pimp2.c    **** 		{
+ 930               		.stabn	68,0,55,.LM110-.LFBB15
+ 931               	.LM110:
+ 932 0010 8091 0000 		lds r24,adc_count
+ 933 0014 8034      		cpi r24,lo8(64)
+ 934 0016 01F4      		brne .L57
+  58:da_pimp2.c    **** 			adc2avg();		// average analog voltage sensor values
+ 935               		.stabn	68,0,58,.LM111-.LFBB15
+ 936               	.LM111:
+ 937 0018 1092 0000 		sts adc_count,__zero_reg__
+  59:da_pimp2.c    **** 			adc2volt();		// convert analog readings into voltage fahrenheit
+ 938               		.stabn	68,0,59,.LM112-.LFBB15
+ 939               	.LM112:
+ 940 001c 00D0      		rcall adc2avg
+  60:da_pimp2.c    **** 			digit_breakup();	// break voltage into hundreds, tens and ones places
+ 941               		.stabn	68,0,60,.LM113-.LFBB15
+ 942               	.LM113:
+ 943 001e 00D0      		rcall adc2volt
+  61:da_pimp2.c    **** 
+ 944               		.stabn	68,0,61,.LM114-.LFBB15
+ 945               	.LM114:
+ 946 0020 00D0      		rcall digit_breakup
+ 947               	.L57:
+  65:da_pimp2.c    **** //		delay_ms(1);
+ 948               		.stabn	68,0,65,.LM115-.LFBB15
+ 949               	.LM115:
+ 950 0022 00D0      		rcall display_digits
+  68:da_pimp2.c    **** 
+ 951               		.stabn	68,0,68,.LM116-.LFBB15
+ 952               	.LM116:
+ 953 0024 00C0      		rjmp .L58
+ 954               		.size	main, .-main
+ 955               	.Lscope15:
+ 956               		.stabs	"",36,0,0,.Lscope15-.LFBB15
+ 957               		.stabd	78,0,0
+ 958               	.global	disp_pos
+ 959               		.data
+ 960               		.type	disp_pos, @object
+ 961               		.size	disp_pos, 1
+ 962               	disp_pos:
+ 963 0000 01        		.byte	1
+ 964               		.comm	adc_avg_total,2,1
+ 965               		.comm	adc_read,2,1
+ 966               		.comm	adc_volt,2,1
+ 967               		.comm	hexcode,1,1
+ 968               	.global	volt_dig3
+ 969               		.section .bss
+ 970               		.type	volt_dig3, @object
+ 971               		.size	volt_dig3, 1
+ 972               	volt_dig3:
+ 973 0000 00        		.zero	1
+GAS LISTING /tmp/ccSGmAQ1.s 			page 24
+
+
+ 974               		.comm	volt_dig2,1,1
+ 975               		.comm	volt_dig1,1,1
+ 976               		.comm	avg_adc,128,1
+ 977               	.global	adc_count
+ 978               		.type	adc_count, @object
+ 979               		.size	adc_count, 1
+ 980               	adc_count:
+ 981 0001 00        		.zero	1
+ 982               	.global	volt
+ 983               		.type	volt, @object
+ 984               		.size	volt, 2
+ 985               	volt:
+ 986 0002 0000      		.zero	2
+ 987               	.global	volt_out
+ 988               		.type	volt_out, @object
+ 989               		.size	volt_out, 2
+ 990               	volt_out:
+ 991 0004 0000      		.zero	2
+ 992               		.stabs	"volt_out:G(5,4)",32,0,19,0
+ 993               		.stabs	"volt:G(5,4)",32,0,20,0
+ 994               		.stabs	"adc_count:G(5,2)",32,0,21,0
+ 995               		.stabs	"avg_adc:G(0,50)=ar(0,51)=r(0,51);0;0177777;;0;63;(5,4)",32,0,22,0
+ 996               		.stabs	"volt_dig1:G(5,2)",32,0,23,0
+ 997               		.stabs	"volt_dig2:G(5,2)",32,0,24,0
+ 998               		.stabs	"volt_dig3:G(5,2)",32,0,25,0
+ 999               		.stabs	"hexcode:G(5,2)",32,0,26,0
+ 1000               		.stabs	"adc_volt:G(5,4)",32,0,27,0
+ 1001               		.stabs	"adc_read:G(5,4)",32,0,28,0
+ 1002               		.stabs	"adc_avg_total:G(5,4)",32,0,29,0
+ 1003               		.stabs	"disp_pos:G(5,2)",32,0,30,0
+ 1004               		.text
+ 1005               		.stabs	"",100,0,0,.Letext0
+ 1006               	.Letext0:
+ 1007               		.ident	"GCC: (GNU) 5.4.0"
+ 1008               	.global __do_copy_data
+ 1009               	.global __do_clear_bss
+GAS LISTING /tmp/ccSGmAQ1.s 			page 25
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 da_pimp2.c
+     /tmp/ccSGmAQ1.s:2      *ABS*:0000003e __SP_H__
+     /tmp/ccSGmAQ1.s:3      *ABS*:0000003d __SP_L__
+     /tmp/ccSGmAQ1.s:4      *ABS*:0000003f __SREG__
+     /tmp/ccSGmAQ1.s:5      *ABS*:00000000 __tmp_reg__
+     /tmp/ccSGmAQ1.s:6      *ABS*:00000001 __zero_reg__
+     /tmp/ccSGmAQ1.s:120    .text:00000000 delay_ms
+     /tmp/ccSGmAQ1.s:138    .text:00000004 L_dl17
+     /tmp/ccSGmAQ1.s:141    .text:00000008 L_dl27
+     /tmp/ccSGmAQ1.s:159    .text:00000014 digits
+     /tmp/ccSGmAQ1.s:194    .text:00000026 hundreds
+     /tmp/ccSGmAQ1.s:238    .text:0000003c tens
+     /tmp/ccSGmAQ1.s:290    .text:0000005e adc_init
+     /tmp/ccSGmAQ1.s:348    .text:00000092 adc_manual_read
+     /tmp/ccSGmAQ1.s:382    .text:000000ae port_init
+     /tmp/ccSGmAQ1.s:426    .text:000000c2 __vector_21
+     /tmp/ccSGmAQ1.s:980    .bss:00000001 adc_count
+                            *COM*:00000080 avg_adc
+     /tmp/ccSGmAQ1.s:482    .text:0000010c adc2avg
+                            *COM*:00000002 adc_avg_total
+                            *COM*:00000002 adc_read
+                            *COM*:00000002 adc_volt
+     /tmp/ccSGmAQ1.s:535    .text:0000014c adc2volt
+     /tmp/ccSGmAQ1.s:589    .text:00000192 digit_breakup
+                            *COM*:00000001 volt_dig1
+                            *COM*:00000001 volt_dig2
+     /tmp/ccSGmAQ1.s:972    .bss:00000000 volt_dig3
+     /tmp/ccSGmAQ1.s:640    .text:000001d4 digit_2_hex
+     /tmp/ccSGmAQ1.s:740    .text:00000210 write_sev_seg
+     /tmp/ccSGmAQ1.s:826    .text:00000246 display_digits
+     /tmp/ccSGmAQ1.s:962    .data:00000000 disp_pos
+                            *COM*:00000001 hexcode
+     /tmp/ccSGmAQ1.s:902    .text.startup:00000000 main
+     /tmp/ccSGmAQ1.s:985    .bss:00000002 volt
+     /tmp/ccSGmAQ1.s:990    .bss:00000004 volt_out
+
+UNDEFINED SYMBOLS
+__floatunsisf
+__divsf3
+__mulsf3
+__fixunssfsi
+__udivmodhi4
+__do_copy_data
+__do_clear_bss
