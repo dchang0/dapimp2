@@ -23,7 +23,13 @@ https://www.instructables.com/DP2-Da-Pimp-2-Assembly-Instructions/
 
 BILL OF MATERIALS:
 
-Included is an Excel spreadsheet with substitute parts for the ones on Mikey's original BoM. I have not ordered this newer BoM in years, so the parts may or may not be current and may or may not need substitutions.
+Included is an Excel spreadsheet with substitute parts for the ones on Mikey's original BoM. I have not ordered this newer BoM in years, so the parts may or may not be current and may or may not need substitutions. The prices are almost certainly waaaaaay off.
+
+IMPORTANT: 
+
+CONN1 is a 5.5mm x 2.1mm DC barrel jack. You are supposed to assemble CONN1 CABLE: a 5.5mm x 2.1mm barrel plug Y-cable to red and black mini alligator clips. However, neither Mouser nor Digikey carries the two-conductor red/black wire needed to assemble the Y-cable. I thus provided the part numbers for the parts I could find but left the part number blank for the 0.5m of two-conductor red/black wire.
+
+I also provided CONN1 CABLE (ALT), which is/was an ebay listing that sells the cables pre-assembled. I have no affiliation with the ebay seller. The listing might not even exist any more, but there are tons of sellers on ebay and Amazon that sell the same thing.
 
 SCHEMATIC: 
 
