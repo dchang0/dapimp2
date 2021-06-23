@@ -33,9 +33,9 @@ CONN1 is a 5.5mm x 2.1mm DC barrel jack. You are supposed to assemble CONN1 CABL
 
 I also provided CONN1 CABLE (ALT), which is/was an ebay listing that sells the cables pre-assembled. I have no affiliation with the ebay seller. The listing might not even exist any more, but there are tons of sellers on ebay and Amazon that sell the same thing.
 
-SCHEMATIC: 
+SCHEMATICS: 
 
-Also included is a redrawn schematic. It should be electrically identical to Mikey's original DA PIMP 2 schematic except for the diode, which Mikey got backwards. My schematic corrects the polarity.
+Also included are Mikey's original schematic and the new Rev. 2 schematic. Rev. 2 should be electrically identical to Mikey's original DA PIMP 2 schematic except for the diode, which Mikey got backwards. Rev. 2 corrects the diode's polarity.
 
 GERBER FILES:
 
