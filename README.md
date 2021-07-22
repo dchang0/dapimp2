@@ -50,7 +50,8 @@ I am also including Mikey's C source code so that you can modify the firmware.
 
 ORIGINAL INSTRUCTIONS:
 
-Mikey's website is long gone, so I have included a PDF of his website that includes the usage instructions.
+Mikey's website is http://mikeysklar.blogspot.com/p/da-pimp-battery-desulfator.html 
+I have included a PDF of his website that includes the usage instructions.
 
 ONCE AGAIN:
 
