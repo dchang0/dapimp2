@@ -8,14 +8,9 @@ NEITHER MIKEY NOR I BEAR ANY LIABILITY FOR ANYTHING YOU DO WITH THIS CIRCUIT
 
 IMPORTANT:
 
-This schematic and PCB has not yet been tested in real life. That is to say, I have not actually ordered this PCB and assembled it into a working DA PIMP 2 Rev. 2.0.
-DO NOT order the PCBs using the included gerber files unless you have inspected the schematic and the gerber files and decided that you are confident the PCB will work.
+I do not provide any support for the DA PIMP 2, and neither does Mikey. If you need help assembling it, then I suggest you ask for assistance from others on the original Instructables page.
 
-Both the schematic and the PCB pass the design check rules, but that doesn't mean it will work.
-
-If you do find that it works or that it doesn't, please open an Issue in this GitHub project, and I will attempt to fix the issue with the PCB. I do not, however, provide any support for the DA PIMP 2, and neither does Mikey. If you need help assembling it, then I suggest you ask for assistance from others on the original Instructables page.
-
-Note that I redrew the schematic and re-created the PCB layout entirely free of charge, so please do not yell at me or complain if the design has an error. I'm doing this only to contribute to the Open Hardware community.
+For a better design and more support, check out my DIMP 1 and DIMP 2 PCBs on DirtyPCBs.com. The DIMP 1 is designed to be safer and have more accurate voltage readings with a separate multimeter, and the DIMP 2 is an improved DA PIMP 2 with a 4-digit display and slide switches instead of jumpers for choosing the output current.
 
 ASSEMBLY INSTRUCTIONS:
 
@@ -44,7 +39,7 @@ The PCB size is 61mm W x 96mm H x 1.6mm D.
 
 FIRMWARE:
 
-Mikey's original firmware file is included. Again, I have not actually assembled this PCB in real life, so there is a chance it won't work. But it should work, since the microcontroller is the same and the wiring is the same. Double-check the schematic if you are not sure.
+Mikey's original firmware file is included. It works on the original DA PIMP 2 as well as this revision 2.
 
 I am also including Mikey's C source code so that you can modify the firmware.
 
