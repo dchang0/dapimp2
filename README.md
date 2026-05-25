@@ -43,6 +43,8 @@ Mikey's original firmware file is included. It works on the original DA PIMP 2 a
 
 I am also including Mikey's C source code so that you can modify the firmware.
 
+UPDATE: The .hex file included in this repository does not work with newer versions of avrdude. It does still work with very old versions of avrdude if you can find a copy. You will have to compile the firmware from Mikey's C source code using the latest build tools in order to use the latest avrdude to flash your ATMEGA48.
+
 ORIGINAL INSTRUCTIONS:
 
 Mikey's website is http://mikeysklar.blogspot.com/p/da-pimp-battery-desulfator.html 
